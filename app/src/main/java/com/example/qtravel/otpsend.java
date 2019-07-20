@@ -8,7 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class Main2Activity extends AppCompatActivity {
+public class otpsend extends AppCompatActivity {
 Button btn1;
 EditText txt2;
     @Override
@@ -22,7 +22,7 @@ EditText txt2;
             public void onClick(View view) {
                 SmsManager s1=SmsManager.getDefault();
 
-                Toast.makeText(Main2Activity.this,"OTP Sent",Toast.LENGTH_LONG).show();
+                Toast.makeText(otpsend.this,"OTP Sent",Toast.LENGTH_LONG).show();
             }
         });
     }
