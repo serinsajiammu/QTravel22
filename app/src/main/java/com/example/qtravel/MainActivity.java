@@ -4,8 +4,12 @@ import android.content.Intent;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
+
+    public static final String INTENT_PHONENUMBER = "phonenumber";
+    public static final String INTENT_COUNTRY_CODE = "code";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
             public void run() {
 
 
-                Intent i = new Intent(MainActivity.this, otpsend.class);
+                Intent i = new Intent(MainActivity.this,otpsend.class);
 
                 startActivity(i);
 
@@ -31,5 +35,8 @@ public class MainActivity extends AppCompatActivity {
             }
 
         }, 5*1000);
+    }
+
+    public void onButtonClicked(View view) {
     }
 }
