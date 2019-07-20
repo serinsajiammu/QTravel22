@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
             public void run() {
 
 
-                Intent i = new Intent(MainActivity.this, Main2Activity.class);
+                Intent i = new Intent(MainActivity.this, otpsend.class);
 
                 startActivity(i);
 
