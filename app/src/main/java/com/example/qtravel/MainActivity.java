@@ -8,8 +8,7 @@ import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
 
-    public static final String INTENT_PHONENUMBER = "phonenumber";
-    public static final String INTENT_COUNTRY_CODE = "code";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

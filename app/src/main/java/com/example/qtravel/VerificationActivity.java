@@ -94,8 +94,8 @@ public class VerificationActivity extends AppCompatActivity implements
     void initiateVerification(boolean skipPermissionCheck) {
         Intent intent = getIntent();
         if (intent != null) {
-            String phoneNumber = intent.getStringExtra(MainActivity.INTENT_PHONENUMBER);
-            String countryCode = intent.getStringExtra(MainActivity.INTENT_COUNTRY_CODE);
+            String phoneNumber = intent.getStringExtra(otpsend.INTENT_PHONENUMBER);
+            String countryCode = intent.getStringExtra(otpsend.INTENT_COUNTRY_CODE);
             TextView phoneText = (TextView) findViewById(R.id.numberText);
             phoneText.setText("+" + countryCode + phoneNumber);
             createVerification(phoneNumber, skipPermissionCheck, countryCode);

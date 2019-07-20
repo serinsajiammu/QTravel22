@@ -135,6 +135,6 @@ public class otpsend extends AppCompatActivity {
         // return PhoneNumberUtils.formatNumberToE164(mPhoneNumber.getText().toString(), mCountryIso);
     }
 
-        Intent i2=new Intent(otpsend.this,VerificationActivity.class);
+
     }
 
