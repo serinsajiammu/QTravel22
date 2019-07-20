@@ -21,6 +21,7 @@ EditText txt2;
             @Override
             public void onClick(View view) {
                 SmsManager s1=SmsManager.getDefault();
+
                 Toast.makeText(Main2Activity.this,"OTP Sent",Toast.LENGTH_LONG).show();
             }
         });
